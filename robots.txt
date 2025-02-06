@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://revenueboosterx.com/sitemap.xml
+Sitemap: https://elevatrx.com/sitemap.xml
