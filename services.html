@@ -11,7 +11,7 @@
     <title>ElevatrX – Hizmetler | Türkçe Kursları ve Dil Eğitimi</title>
 
     <link rel="icon" type="image/png" href="./public/logo.png" />
-    <link rel="stylesheet" href="./css/services-page.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
 
   <body>
@@ -19,96 +19,66 @@
 
     <main>
       <section class="hero">
-        <div class="hero-content">
-          <h1 class="title">Gelirinizi Maksimuma Çıkarın</h1>
-          <p class="main-text hero-text">
-            Akıllı iş çözümleriyle işletmenizi bir üst seviyeye taşıyın. Veri
-            analizi, otomasyon ve stratejik planlama ile kârlılığınızı artırın.
-          </p>
+        <div class="slider" id="slider">
+          <div class="slide active">
+            <img src="./images/hero-img1.jpg" alt="Temel Türkçe Kursu" />
+            <div class="slide-content">
+              <h2>Temel Türkçe Kursu</h2>
+              <p>Aralık 2024'ten itibaren başlıyor</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="./images/hero-img2.jpg" alt="Konuşma Pratiği Kursları" />
+            <div class="slide-content">
+              <h2>Konuşma Pratiği Kursları</h2>
+              <p>Aralık 2024'ten itibaren başlıyor</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="./images/hero-img3.jpg" alt="İleri Düzey Türkçe Kursu" />
+            <div class="slide-content">
+              <h2>İleri Düzey Türkçe Kursu</h2>
+              <p>Kasım 2024'ten itibaren başlıyor</p>
+            </div>
+          </div>
         </div>
-        <div class="hero-background"></div>
+        <button class="prev-btn" onclick="prevSlide()">&#10094;</button>
+        <button class="next-btn" onclick="nextSlide()">&#10095;</button>
       </section>
-      <section class="section">
+      <section class="services-section">
         <div class="container">
-          <h2 class="main-title">Hizmetlerimiz</h2>
-          <p class="main-text">
-            RevenueBoosterX, işletmelerin dijital dünyada büyümesini
-            hızlandırmak için geniş bir hizmet yelpazesi sunar. Pazarlama
-            otomasyonu, veri analizi ve stratejik çözümlerimizle, şirketinizin
-            kârlılığını artırıyoruz.
-          </p>
-          <div class="service-item">
-            <h3 class="main-subtitle">1. Dijital Pazarlama Çözümleri</h3>
-            <p class="main-text">
-              Markanızı büyütmek için özelleştirilmiş pazarlama stratejileri
-              sunuyoruz:
-            </p>
-            <ul class="service-list">
-              <li>SEO ve içerik stratejileri ile organik trafik artırma.</li>
-              <li>Sosyal medya yönetimi ve reklam kampanyaları.</li>
-              <li>Dönüşüm oranı optimizasyonu ile satışların artırılması.</li>
-            </ul>
-            <p class="service-highlight">
-              Dijital dünyada markanızın daha görünür olmasını sağlıyoruz!
+          <h2>Size Nasıl Yardımcı Olabiliriz?</h2>
+
+          <div class="service-card">
+            <h3>Online Türkçe Kursları</h3>
+            <p>
+              Başlangıçtan ileri seviyeye kadar kapsamlı online kurslarımızla,
+              dilediğiniz yerden Türkçe öğrenin.
             </p>
           </div>
-          <div class="service-item">
-            <h3 class="main-subtitle">2. Otomasyon ve CRM Entegrasyonu</h3>
-            <p class="main-text">
-              İş süreçlerinizi daha verimli hale getirmek için gelişmiş
-              otomasyon çözümleri sunuyoruz:
-            </p>
-            <ul class="service-list">
-              <li>Otomatik müşteri ilişkileri yönetimi (CRM) sistemleri.</li>
-              <li>E-posta pazarlama ve müşteri segmentasyonu.</li>
-              <li>Satış sürecini hızlandıran otomasyon araçları.</li>
-            </ul>
-          </div>
-          <div class="service-item">
-            <h3 class="main-subtitle">3. Veri Analizi ve Raporlama</h3>
-            <p class="main-text">
-              Veriye dayalı kararlar almak için detaylı analiz ve raporlama
-              hizmetleri sunuyoruz:
-            </p>
-            <ul class="service-list">
-              <li>Gerçek zamanlı veri analizi ile performans takibi.</li>
-              <li>İleri düzey müşteri davranışı analizleri.</li>
-              <li>Özelleştirilmiş raporlar ile stratejik içgörüler.</li>
-            </ul>
-            <p class="service-highlight">
-              Daha bilinçli iş kararları alarak rakiplerinizin önüne geçin!
+
+          <div class="service-card">
+            <h3>Özel Dersler</h3>
+            <p>
+              Birebir derslerimiz ile eğitmenlerimizle doğrudan etkileşime
+              girerek öğrenme sürecinizi hızlandırın.
             </p>
           </div>
-          <div class="service-img">
-            <img src="./img/services-page.jpg" alt="" class="service-img" />
-          </div>
-          <div class="service-item">
-            <h3 class="main-subtitle">4. 7/24 Müşteri Desteği</h3>
-            <p class="main-text">
-              İşletmenizin ihtiyaçlarına her zaman yanıt vermek için buradayız:
+
+          <div class="service-card">
+            <h3>Konuşma Kulübü</h3>
+            <p>
+              Canlı sohbet oturumlarıyla Türkçeyi pratik yaparak öğrenin ve
+              kendinizi geliştirin.
             </p>
-            <ul class="service-list">
-              <li>Özel danışmanlık hizmetleri.</li>
-              <li>Canlı destek ve teknik yardım.</li>
-              <li>Sorularınıza hızlı ve etkili çözümler.</li>
-            </ul>
           </div>
-          <div class="service-item">
-            <h3 class="main-subtitle">5. Özel Kampanyalar ve Promosyonlar</h3>
-            <p class="main-text">Müşterilerimize özel teklifler sunuyoruz:</p>
-            <ul class="service-list">
-              <li>Yeni müşterilere özel hoş geldin kampanyaları.</li>
-              <li>Sadakat programları ve indirimler.</li>
-              <li>Özel paketler ve iş ortaklıkları için avantajlar.</li>
-            </ul>
-          </div>
-          <div class="service-summary">
-            <h3 class="summary-title">Neden RevenueBoosterX?</h3>
-            <ul class="summary-list">
-              <li>Gelişmiş dijital pazarlama stratejileri.</li>
-              <li>Verimlilik ve otomasyon çözümleri.</li>
-              <li>Profesyonel destek ve hızlı sonuçlar.</li>
-            </ul>
+
+          <div class="service-card">
+            <h3>Sertifikalı Programlar</h3>
+            <p>
+              Türkçe becerilerinizi resmi olarak kanıtlamak için sertifikalı
+              eğitim programlarımıza katılın.
+            </p>
           </div>
         </div>
       </section>
@@ -116,36 +86,7 @@
 
     <footer class="footer section"></footer>
 
-    <!-- Mob menu -->
-    <div class="mobile-menu js-menu-container">
-      <div class="mobile-menu-container">
-        <div class="mobile-menu-head">
-          <a href="./" class="mobile-menu-logo link">RevenueBoosterX</a>
-          <button type="button" class="menu-toggle js-close-menu">
-            <img
-              src="./img/close.png"
-              alt="Close icon"
-              aria-label="Close mobile menu"
-              class="close-menu-icon"
-              width="24"
-              height="24"
-            />
-          </button>
-        </div>
-        <ul class="mobile-menu-list list">
-          <li>
-            <a href="./about.html" class="mobile-menu-link link">Hakkımızda</a>
-          </li>
-          <li>
-            <a href="./services.html" class="mobile-menu-link link"
-              >Hizmetlerimiz</a
-            >
-          </li>
-        </ul>
-      </div>
-    </div>
-
     <script src="./js/builder.js"></script>
-    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/slider.js"></script>
   </body>
 </html>

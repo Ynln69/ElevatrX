@@ -19,83 +19,92 @@
 
     <main>
       <section class="hero">
-        <div class="hero-content">
-          <h1 class="title">Gelirinizi Maksimuma Çıkarın</h1>
-          <p class="main-text hero-text">
-            Akıllı iş çözümleriyle işletmenizi bir üst seviyeye taşıyın. Veri
-            analizi, otomasyon ve stratejik planlama ile kârlılığınızı artırın.
-          </p>
+        <div class="slider" id="slider">
+          <div class="slide active">
+            <img src="./images/hero-img1.jpg" alt="Temel Türkçe Kursu" />
+            <div class="slide-content">
+              <h2>Temel Türkçe Kursu</h2>
+              <p>Aralık 2024'ten itibaren başlıyor</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="./images/hero-img2.jpg" alt="Konuşma Pratiği Kursları" />
+            <div class="slide-content">
+              <h2>Konuşma Pratiği Kursları</h2>
+              <p>Aralık 2024'ten itibaren başlıyor</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="./images/hero-img3.jpg" alt="İleri Düzey Türkçe Kursu" />
+            <div class="slide-content">
+              <h2>İleri Düzey Türkçe Kursu</h2>
+              <p>Kasım 2024'ten itibaren başlıyor</p>
+            </div>
+          </div>
         </div>
-        <div class="hero-background"></div>
+        <button class="prev-btn" onclick="prevSlide()">&#10094;</button>
+        <button class="next-btn" onclick="nextSlide()">&#10095;</button>
       </section>
-      <section class="section about-us">
+      <section class="courses-section">
         <div class="container">
-          <h2 class="main-title">Hakkımızda</h2>
-          <p class="main-text about-text">
-            RevenueBoosterX olarak, işletmelerin dijital dünyada büyümesine
-            yardımcı oluyoruz. Akıllı otomasyon, pazarlama stratejileri ve veri
-            analizi çözümlerimizle, müşterilerimize en iyi performansı sunmayı
-            hedefliyoruz.
-          </p>
-          <ul class="about-wrapper">
-            <li class="about-item">
-              <h3 class="main-subtitle">Hikayemiz</h3>
-              <p class="main-desc">
-                RevenueBoosterX, işletmelerin kârlılığını artırmak amacıyla
-                kurulmuştur. Stratejik çözümler ve yenilikçi teknolojilerimizle,
-                dijital dönüşümde öncü olmayı hedefliyoruz.
-              </p>
-            </li>
-            <li class="about-item">
-              <h3 class="main-subtitle">Değerlerimiz</h3>
-              <p class="main-desc">
-                Yenilik, güvenilirlik ve verimlilik bizim için en önemli
-                değerlerdir. Müşterilerimize en iyi dijital büyüme çözümlerini
-                sunmak için çalışıyoruz.
-              </p>
-            </li>
-          </ul>
-          <img
-            src="../img/about-page.jpg"
-            alt="RevenueBoosterX ekibi"
-            class="about-picture"
-          />
+          <h2>Kurslarımız</h2>
+          <div class="course-card">
+            <h3>Temel Seviye Türkçe Kursu</h3>
+            <p>
+              Bu kurs, Türkçe'ye yeni başlayanlar için tasarlanmıştır. Temel
+              kelimeler, günlük ifadeler ve temel dilbilgisi kurallarını kapsar.
+            </p>
+          </div>
+          <div class="course-card">
+            <h3>Orta Seviye Türkçe Kursu</h3>
+            <p>
+              Temel bilgileri olan öğrenciler için hazırlanmıştır. Daha karmaşık
+              cümleler kurma ve akıcı konuşma pratiği içerir.
+            </p>
+          </div>
+          <div class="course-card">
+            <h3>İleri Seviye Türkçe Kursu</h3>
+            <p>
+              Akıcı konuşmak isteyenler için profesyonel düzeyde eğitim.
+              Akademik ve iş dünyasında kullanım için mükemmel bir seçenek.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq-section">
+        <div class="container">
+          <h2>Sıkça Sorulan Sorular</h2>
+          <div class="faq">
+            <h3>Kurslar nasıl işliyor?</h3>
+            <p>
+              Kurslarımız çevrim içi olarak uzman eğitmenler tarafından
+              verilmektedir. Dersler video, interaktif alıştırmalar ve canlı
+              oturumları içerir.
+            </p>
+          </div>
+          <div class="faq">
+            <h3>Kursa kimler katılabilir?</h3>
+            <p>
+              Her yaştan ve seviyeden katılımcılar için uygundur. Hiç Türkçe
+              bilmeyenlerden ileri seviyeye kadar herkes için kurslarımız
+              mevcuttur.
+            </p>
+          </div>
+          <div class="faq">
+            <h3>Kurs süresi ne kadar?</h3>
+            <p>
+              Her seviye için kurs süresi ortalama 6-8 haftadır. Ders programına
+              göre bu süre değişebilir.
+            </p>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="footer section"></footer>
 
-    <!-- Mob menu -->
-    <div class="mobile-menu js-menu-container">
-      <div class="mobile-menu-container">
-        <div class="mobile-menu-head">
-          <a href="./" class="mobile-menu-logo link">RevenueBoosterX</a>
-          <button type="button" class="menu-toggle js-close-menu">
-            <img
-              src="./img/close.png"
-              alt="Close icon"
-              aria-label="Close mobile menu"
-              class="close-menu-icon"
-              width="24"
-              height="24"
-            />
-          </button>
-        </div>
-        <ul class="mobile-menu-list list">
-          <li>
-            <a href="./about.html" class="mobile-menu-link link">Hakkımızda</a>
-          </li>
-          <li>
-            <a href="./services.html" class="mobile-menu-link link"
-              >Hizmetlerimiz</a
-            >
-          </li>
-        </ul>
-      </div>
-    </div>
-
     <script src="./js/builder.js"></script>
-    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/slider.js"></script>
   </body>
 </html>
