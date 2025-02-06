@@ -822,7 +822,7 @@ img {
 
 /* Sıkça Sorulan Sorular */
 .faq-section {
-  background: #eeeeee;
+  background-color: #faf4d2;
   padding: 50px 20px;
   text-align: center;
 }
@@ -847,6 +847,7 @@ img {
 }
 
 .services-section {
+  background-color: #faf4d2;
   padding: 50px 20px;
   text-align: center;
 }
