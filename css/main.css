@@ -174,6 +174,7 @@ img {
 
 .slide img {
   width: 90%;
+  max-width: 1440px;
   filter: brightness(70%);
   margin-right: auto;
   margin-left: auto;
@@ -186,7 +187,7 @@ img {
 .slide-content {
   position: absolute;
   bottom: 20%;
-  left: 10%;
+  left: 27%;
   color: #fff;
 }
 
@@ -223,11 +224,11 @@ img {
 }
 
 .prev-btn {
-  left: 10px;
+  left: 20%;
 }
 
 .next-btn {
-  right: 10px;
+  right: 20%;
 }
 /* ABOUT */
 .about-us {
@@ -238,7 +239,6 @@ img {
   background-image: url("../images/banner-about.webp");
   background-size: cover;
   background-position: center;
-  width: 90vw;
   padding: 60px 0;
   text-align: center;
 }
@@ -393,110 +393,6 @@ img {
 
 .instructor-button:hover {
   background-color: #558a58;
-}
-/* CONTACTS */
-.contact-section {
-  background-color: #fff;
-}
-
-.contact-banner h2 {
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.contact-banner p {
-  color: #555;
-  font-size: 1rem;
-  text-align: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  font-size: clamp(1.125rem, 0.536vw + 1.018rem, 1.5rem);
-  line-height: clamp(1.519rem, 0.723vw + 1.374rem, 2.025rem);
-}
-
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 20px 0;
-  text-align: center;
-  @media (min-width: 768px) {
-    flex-direction: row;
-  }
-}
-
-.contact-item p {
-  font-weight: bold;
-  margin-bottom: 5px;
-  color: #333;
-}
-
-.contact-item a {
-  color: #333;
-  text-decoration: none;
-}
-
-.contact-item a:hover {
-  text-decoration: underline;
-}
-.contact-form-section {
-  background-color: #f5f5f5;
-}
-
-.contact-form-section h2 {
-  font-size: 1.8rem;
-  color: #333;
-  text-align: left;
-  margin-bottom: 20px;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-form label {
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 5px;
-  display: block;
-}
-
-.contact-form textarea,
-.contact-form input {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  background-color: #fff;
-}
-
-.contact-form-group {
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-
-.form-field {
-  flex: 1;
-  min-width: 250px;
-}
-
-.submit-button {
-  background-color: #333;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 1rem;
-  border-radius: 4px;
-  cursor: pointer;
-  align-self: start;
-}
-
-.submit-button:hover {
-  background-color: #555;
 }
 
 .modal {
@@ -903,3 +799,356 @@ img {
   height: 450px;
   object-fit: cover;
 }
+
+.success-stories {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  overflow: hidden;
+}
+.success-stories h2 {
+  font-size: 2.8rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+.success-stories p {
+  font-size: 1.4rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+.story-slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: #66b366 #ccc;
+}
+/* Прокрутка для Chrome, Edge, Safari */
+.story-slider::-webkit-scrollbar {
+  height: 8px;
+}
+.story-slider::-webkit-scrollbar-track {
+  background: #ccc;
+  border-radius: 4px;
+}
+.story-slider::-webkit-scrollbar-thumb {
+  background-color: #66b366;
+  border-radius: 4px;
+}
+.story-card {
+  flex: 0 0 30%;
+  min-width: 30%;
+  max-width: 30%;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  scroll-snap-align: center;
+}
+.story-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  @media (min-width: 1440px) {
+    flex-direction: row;
+  }
+}
+.story-content img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #66b366;
+}
+.story-text {
+  text-align: left;
+}
+.story-text p {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 5px;
+}
+.story-text h4 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #66b366;
+}
+/* Мобільна адаптація */
+@media screen and (max-width: 900px) {
+  .story-slider {
+    flex-direction: row;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    gap: 10px;
+  }
+  .story-card {
+    width: 80%;
+    min-width: 80%;
+    max-width: 80%;
+  }
+}
+
+.interactive-lessons {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  background: #a4d3a4;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-les {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.lesson-content {
+  flex: 1;
+  text-align: left;
+}
+
+.lesson-content h2 {
+  font-size: 2.8rem;
+  color: #121212;
+  margin-bottom: 15px;
+}
+
+.lesson-content p {
+  font-size: 1.4rem;
+  color: #3c3c3c;
+  margin-bottom: 20px;
+}
+
+.lesson-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.lesson-content ul li {
+  font-size: 1.2rem;
+  color: #2d2c2c;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.lesson-content ul li::before {
+  content: "✔️";
+  margin-right: 10px;
+  color: #00ff59;
+  font-size: 1.3rem;
+}
+
+.lesson-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.lesson-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Адаптація для мобільних пристроїв */
+@media screen and (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .lesson-image img {
+    max-width: 100%;
+  }
+}
+
+.certification-program {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  background: #faf4d2;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-certification {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.certification-content {
+  flex: 1;
+  text-align: left;
+}
+
+.certification-content h2 {
+  font-size: 2.8rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.certification-content p {
+  font-size: 1.4rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.certification-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.certification-content ul li {
+  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.certification-content ul li::before {
+  content: "✔️";
+  margin-right: 10px;
+  color: #ff9800;
+  font-size: 1.3rem;
+}
+
+.certification-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.certification-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  margin-top: 20px;
+  background: #ff9800;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #e68900;
+}
+
+/* Адаптація для мобільних пристроїв */
+@media screen and (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .certification-image img {
+    max-width: 100%;
+  }
+}
+
+.workshop-header {
+  margin-bottom: 40px;
+}
+.workshop-header h2 {
+  font-size: 2.8rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+.workshop-header p {
+  font-size: 1.4rem;
+  color: #666;
+}
+.workshop-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+.workshop-item {
+  background-color: #a0e8b8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.workshop-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+.workshop-item h3 {
+  font-size: 1.8rem;
+  color: #142d1d;
+  margin-bottom: 10px;
+}
+.workshop-item p {
+  font-size: 1.2rem;
+  color: #444;
+}
+
+
+.mobile-learning h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #212121;
+  margin-bottom: 15px;
+}
+
+.mobile-learning p {
+  font-size: 1.2rem;
+  color: #757575;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.mobile-learning img {
+  width: 70%;
+  height: 450px;
+  object-fit: cover;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.private-lesson {
+  text-align: center;
+}
+.private-lesson h2 {
+  font-size: 2rem;
+  color: #212121;
+  margin-bottom: 15px;
+}
+.private-lesson p {
+  font-size: 1.2rem;
+  color: #757575;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+.private-lesson img {
+  width: 70%;
+  height: 450px;
+  object-fit: cover;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
