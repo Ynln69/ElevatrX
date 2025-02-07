@@ -1104,7 +1104,6 @@ img {
   color: #444;
 }
 
-
 .mobile-learning h2 {
   text-align: center;
   font-size: 2rem;
@@ -1127,7 +1126,6 @@ img {
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
-
 
 .private-lesson {
   text-align: center;
@@ -1152,3 +1150,79 @@ img {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
+.advanced-service-section {
+  background: linear-gradient(to bottom, #fff5d7, #ffebaf);
+}
+.advanced-service-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #212121;
+  margin-bottom: 15px;
+}
+.advanced-service-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.advanced-service-box {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.advanced-service-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.advanced-service-text h3 {
+  color: #2e2e72;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.advanced-service-text p {
+  color: #555;
+  font-size: 1rem;
+}
+
+
+.beginner-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.beginner-text {
+  max-width: 450px;
+}
+
+.beginner-text h2 {
+  color: #006064;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.beginner-text p {
+  color: #004d40;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.beginner-image {
+  width: 250px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
